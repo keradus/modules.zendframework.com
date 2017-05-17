@@ -5,7 +5,7 @@ composer:
 	composer install --prefer-dist
 
 cs: composer
-	vendor/bin/php-cs-fixer fix --config-file=.php_cs --diff --verbose
+	vendor/bin/php-cs-fixer fix --config-file=.php_cs.dist --diff --verbose
 
 test: composer
 	cp config/autoload/travis.php.local.dist config/autoload/travis.local.php
