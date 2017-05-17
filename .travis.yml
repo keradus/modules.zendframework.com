@@ -28,7 +28,7 @@ before_script:
   - php public/index.php migrations:migrate --no-interaction --verbose
 
 script:
-  - vendor/bin/php-cs-fixer fix --config-file=./.php_cs --dry-run --diff -v
+  - vendor/bin/php-cs-fixer fix --config-file=./.php_cs.dist --dry-run --diff -v
   - vendor/bin/phpunit --configuration phpunit.xml
 
 notifications:
